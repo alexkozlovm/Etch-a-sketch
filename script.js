@@ -16,4 +16,9 @@ cells.forEach(cell => {
     });
 });
 
+function reset() {
+    cells.forEach(cell => {
+        cell.style.backgroundColor = '#282c34';
+    });
+}
 
