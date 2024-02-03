@@ -2,16 +2,76 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: blue; /* Set text color to white */
 }
+
+body {
+    background-color: #1e1e1e; /* Set background color to dark gray */
+}
+
 .cell {
     width: 50px;
     height: 50px;
-    background-color: white;
-    border: black 1px solid;
+    background-color: #282c34; /* Set cell background color to dark blue */
+    border: lightgray 1px solid; /* Remove cell border */
 }
+
 #container {
     display: flex;
     flex-wrap: wrap;
     width: 802px;
-    border: black 1px solid;
+    border: none; /* Remove container border */
+}
+
+header {
+    text-align: center;
+    margin: 25px 0;
+    padding-bottom: 10px; /* Increase space below header */
+    border-bottom: 1px solid lightgray; /* Add visible line below header */
+    padding: 7px; /* Increase padding of footer */
+    font-size: 30px; /* Increase font size of header */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Increase space between header and main */
+    margin-bottom: 20px; /* Increase space between main and footer */
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vertically center the controls */
+    margin: 20px 0;
+}
+
+#controls button {
+    padding: 15px;
+    margin: 10px;
+    background-color: #282c34; /* Set button background color to dark blue */
+    color: rgb(24, 24, 255); /* Set button text color to white */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius to buttons */
+    font-size: 16px; /* Increase font size of buttons */
+    margin-right: 15px;
+}
+
+#controls input {
+    padding: 10px;
+    margin: 5px;
+    background-color: #282c34; /* Set input background color to dark blue */
+    color: blue; /* Set input text color to white */
+    border: none; /* Remove input border */
+    margin-right: 15px;
+}
+
+footer {
+    text-align: center;
+    margin: 25px 0;
+    padding-top: 10px; /* Increase space above footer */
+    border-top: 1px solid lightgray; /* Add visible line above footer */
+    font-size: 25px; /* Increase font size of footer */
+    padding: 5px; /* Increase padding of footer */
 }
