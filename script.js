@@ -28,14 +28,16 @@ function draw(event) {
     if (event.type === 'mouseover' && !event.buttons) return;
     const cell = event.target;
     if (mode === 'pen') {
+        cell.style.cursor = 'crosshair';
         color = 'white';
     } else if (mode === 'eraser') {
+        cell.style.cursor = 'pointer';
         color = '#282c34';
     } else if (mode === 'rainbow') {
         color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     }
     cell.style.backgroundColor = color;
-    cell.style.cursor = 'crosshair';
+    
 }
 
 // Reset function
