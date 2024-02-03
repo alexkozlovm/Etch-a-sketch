@@ -13,9 +13,9 @@
     <main>
       <section id="controls">
         <button id="reset" onclick="reset()">Reset</button>
-        <button id="pen">Pen</button>
-        <button id="rainbow">Rainbow</button>
-        <button id="eraser">Eraser</button>
+        <button id="pen" onclick="mode = 'pen'">Pen</button>
+        <button id="rainbow" onclick="mode = 'rainbow'">Rainbow</button>
+        <button id="eraser" onclick="mode = 'eraser'">Eraser</button>
         <input type="range" min="1" max="64" value="16" id="grid-size" />
       </section>
       <section id="grid">
