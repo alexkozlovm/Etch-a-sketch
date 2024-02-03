@@ -9,20 +9,6 @@ body {
     background-color: #1e1e1e; /* Set background color to dark gray */
 }
 
-.cell {
-    width: 50px;
-    height: 50px;
-    background-color: #282c34; /* Set cell background color to dark blue */
-    border: lightgray 1px solid; /* Remove cell border */
-}
-
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 802px;
-    border: none; /* Remove container border */
-}
-
 header {
     text-align: center;
     margin: 25px 0;
@@ -74,4 +60,17 @@ footer {
     border-top: 1px solid lightgray; /* Add visible line above footer */
     font-size: 25px; /* Increase font size of footer */
     padding: 5px; /* Increase padding of footer */
+}
+
+.cell {
+    background-color: #282c34; /* Set cell background color */
+    /* Remove fixed width and height to allow JavaScript to set these dynamically */
+}
+
+#container {
+    display: grid;
+    grid-gap: 0px; /* Adjust based on your preference */
+    width: 800px; /* Ensure container width is fixed */
+    margin: 0 auto; /* Center the container */
+    /* height: auto; If you want to ensure that the container's height adjusts based on content */
 }
